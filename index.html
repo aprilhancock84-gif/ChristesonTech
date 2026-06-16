@@ -47,7 +47,16 @@ body {
     text-align: center;
 }
 
-.hero-image img {
+.logo-image {
+    width: 230px;
+    height: auto;
+    display: block;
+    margin: 0 auto 24px auto;
+    border-radius: 18px;
+    box-shadow: 0 10px 28px rgba(0,0,0,.12);
+}
+
+.profile-image {
     width: 285px;
     height: 285px;
     object-fit: cover;
@@ -100,11 +109,6 @@ body {
 
 .alt-section {
     background: #eef7f7;
-}
-
-.alt-section .section {
-    padding-top: 80px;
-    padding-bottom: 80px;
 }
 
 .section-title {
@@ -210,6 +214,15 @@ footer {
     .hero-content {
         flex-direction: column;
     }
+
+    .logo-image {
+        width: 200px;
+    }
+
+    .profile-image {
+        width: 245px;
+        height: 245px;
+    }
 }
 </style>
 
@@ -222,7 +235,13 @@ footer {
 
 ```
     <div class="hero-image">
-        <img src="images/profile.jpg" alt="April Christeson">
+        <img src="images/logo.png"
+             alt="Christeson Technology Consulting Logo"
+             class="logo-image">
+
+        <img src="images/profile.jpg"
+             alt="April Christeson"
+             class="profile-image">
     </div>
 
     <div class="hero-text">
@@ -398,6 +417,10 @@ footer {
 <footer>
     © 2026 Christeson Technology Consulting • Technology With A Human Touch
 </footer>
+
+</body>
+</html>
+
 
 </body>
 </html>
